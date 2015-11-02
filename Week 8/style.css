@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+
+header {
+	width:100%;
+	text-align:center;
+	height:50px;
+	background-color:#3C3;
+	
+}
+
+.column-left { 
+	float:left; 
+	width:33%; 
+}
+.column-right{ 
+	float:right; 
+	width:33%; 
+}
+.column-center{ 
+	display:inline-block; 
+	width:34%; 
+}
+
+@media (min-width:400px) and (max-width:799px) {
+	.column-left {
+		width:100%;
+	}
+	.column-right {
+		display:none;
+	}
+	.column-center {
+		display:none;
+	}
+}
+@media (min-width:800px) and (max-width:1199px) {
+	.column-left {
+		width:50%;
+	}
+	.column-right {
+		display:none;
+	}
+	.column-center {
+		width:50%;
+	}
+}
+
+@media (min-width:1200px) {
+	.column-left {
+		width:33%;
+	}
+	.column-right {
+		width:33%;
+	}
+	.column-center {
+		width:34%;
+	}
+}
